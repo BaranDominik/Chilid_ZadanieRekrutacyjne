@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+    
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type=text/javascript src="js/main.js"></script>
+</head>
+    
+<body>
+<div id="wrapper">
+    
+    <table id="sluzba">
+        <thead>
+            <tr>
+                <th onclick='sortTable(0)'>Id<span class=''></span></th>
+                <th onclick='sortTable(1)'>First name<span class=''></span></th>
+                <th onclick='sortTable(2)'>Last name<span class=''></span></th>
+                <th onclick='sortTable(3)'>Date of birth<span class=''></span></th>
+                <th onclick='sortTable(4)'>Function<span class=''></span></th>
+                <th onclick='sortTable(5)'>Experience<span class=''></span></th>
+            </tr>
+        </thead>
+    </table>
+    
+    <label for="search">Szukana fraza:</label>
+    <input type="text" id="search" value="" placeholder="np. Krzysztof" onkeyup="filter()">
+    
+    <select id="filter_by" onchange="filter()">
+        <option value="id">Id</option>
+        <option value="firstName">First name</option>
+        <option value="lastName">Last name</option>
+        <option value="function">Function</option>
+        <option value="experience">Experience</option>
+    </select>
+    
+    <div id="pagination">
+	</div>
+</div>
+</body>
+    
+</html>
