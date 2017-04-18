@@ -108,7 +108,7 @@ function sortTable(n){
 };
 
 function pagination(){
-    var req_num_row=10;
+    var req_num_row=5;
     var $tr=jQuery('tbody tr');
     var total_num_row=$tr.length;
     var num_pages=0;
